@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         title: "West Island Mobile Detailing",
         description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
         images: [{
-            url: "carwash_logo.png",
+            url: "http://samsmobiledetailing.vercel.app/carwash_logo.png",
             width: 733,
             height: 733,
             alt: "Sam's Mobile Detailing Logo"
