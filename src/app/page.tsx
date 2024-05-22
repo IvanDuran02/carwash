@@ -19,6 +19,13 @@ function Body() {
             <div className="absolute top-4 right-4">
                 <ThemeButton />
             </div>
+
+            <div className="absolute bottom-0 text-center w-full tracking-widest md:pb-4 pb-1">
+                <h2 className="font-semibold opacity-85">Contact:</h2>
+                <p><a href="mailto:samsmobiledetailingmtl@gmail.com" className="opacity-65">samsmobiledetailingmtl@gmail.com</a></p>
+                <p><a href="tel:+15147724554" className="opacity-65">(514) 772-4554</a></p>
+
+            </div>
         </section>
     )
 }
@@ -46,8 +53,8 @@ function AnimatedComponent({ children, delay, duration, opacity, className, init
 
 const Services = () => {
     return (
-        <div className="w-full h-full flex justify-center items-center tracking-widest">
-            <div className="text-center p-8 h-auto space-y-4 border-foreground-accent">
+        <div className="w-full flex justify-center items-center tracking-widest">
+            <div className="text-center pb-12 md:space-y-4">
 
                 <AnimatedComponent delay={1.3} duration={2.5} initial={0} opacity={1}>
                     <div>

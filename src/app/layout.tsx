@@ -15,6 +15,13 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
     title: "West Island Mobile Detailing",
     description: "Experience top-tier car detailing at your doorstep with West Island Mobile Detailing. Luxury made easy.",
+    icons: [
+        {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            url: '/icon.png',
+        }],
     openGraph: {
         title: "West Island Mobile Detailing",
         description: "Experience top-tier car detailing at your doorstep with West Island Mobile Detailing. Luxury made easy.",
