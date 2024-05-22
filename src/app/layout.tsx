@@ -14,16 +14,19 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
     title: "West Island Mobile Detailing",
-    description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
+    description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
     openGraph: {
         title: "West Island Mobile Detailing",
-        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
-        images: 'carwash_logo.png'
+        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
+        images: ['carwash_logo.png']
     },
     twitter: {
+        card: "summary_large_image",
         title: "West Island Mobile Detailing",
-        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
-        images: 'carwash_logo.png'
+        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
+        images: ['carwash_logo.png']
+
+
     }
 };
 
