@@ -13,8 +13,18 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-    title: "Looking to get your car washed by a 6'5 250 pound monster meanace in the top lane?",
-    description: "Contact sam for a wash, rates starting from $999 but no worries, we take payment plans!",
+    title: "West Island Mobile Detailing",
+    description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
+    openGraph: {
+        title: "West Island Mobile Detailing",
+        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
+        images: 'carwash_logo.png'
+    },
+    twitter: {
+        title: "West Island Mobile Detailing",
+        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. Our professional team brings top-tier car wash and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered. Our meticulous attention to detail ensures your vehicle looks its best, enhancing its beauty and longevity. Discover the ease of a pristine car without leaving your home – because your time and your car deserve the best. Prices vary based on car size, ensuring tailored service for every vehicle.",
+        images: 'carwash_logo.png'
+    }
 };
 
 export default function RootLayout({
