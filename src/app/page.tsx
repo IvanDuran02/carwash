@@ -1,44 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { motion } from 'framer-motion';
-import { Button } from "@/components/ui/button";
-import Link from 'next/link';
+import { ThemeButton } from "@/components/theme-button"
 
 function Body() {
     return (
         <section
-            className="w-full h-[100vh] flex justify-center items-center bg-[url('https://wallpaperswide.com/download/hot_girl_luxury_car-wallpaper-2400x1350.jpg')] bg-contain  md:bg-center"
+            className="w-full h-[100vh] flex"
         >
-            <div>
-                <motion.h1
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0 }}
-                    transition={{ delay: 1.5, duration: 1 }}
-                    className="text-4xl font-bold text-white"
-                >
-                    {"Welcome to Sam's wash"}
-                </motion.h1>
-                <motion.h1
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, translateY: -35 }}
-                    transition={{ delay: 2, duration: 1 }}
-                    className="text-2xl font-bold text-white">{"Looking to get you're car washed?"}</motion.h1>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, translateY: -25 }}
-                    transition={{ delay: 2.7, duration: 1.5 }}
-                    className="flex gap-4 p-4 justify-center">
-                    <Link href="/login/doctor">
-                        <Button size="lg" className="font-semibold">
-                            View Options
-                        </Button>
-                    </Link>
-                    <Link href="/login/doctor">
-                        <Button size="lg" variant="secondary" className="font-semibold">
-                            Book Appointment
-                        </Button>
-                    </Link>
-                </motion.div>
+            <AnimatedComponent delay={1.5} duration={2} className="flex absolute justify-center items-center p-4">
+                <img src="carwash_logo.png" className="rounded-md md:w-32 md:h-32 h-12 w-12" alt="">
+                </img>
+            </AnimatedComponent>
+
+            <Services />
+
+            <div className="absolute top-4 right-4">
+                <ThemeButton />
             </div>
         </section>
     )
@@ -52,3 +31,47 @@ export default function Home() {
     );
 }
 
+function AnimatedComponent({ children, delay, duration, opacity, className, initial }: ({ children: any, delay?: number, duration?: number, opacity?: number, className?: string, initial?: number })) {
+    return (
+        <motion.h1
+            initial={{ opacity: initial ?? undefined }}
+            animate={{ opacity: opacity ?? undefined }}
+            transition={{ delay: delay, duration: duration ?? undefined }}
+            className={`text-foreground-accent ${className}`}
+        >
+            {children}
+        </motion.h1 >
+    )
+}
+
+const Services = () => {
+    return (
+        <div className="w-full h-full flex justify-center items-center tracking-widest">
+            <div className="text-center p-8 h-auto space-y-4 border-foreground-accent">
+
+                <AnimatedComponent delay={1.3} duration={2.5} initial={0} opacity={1}>
+                    <div>
+                        <h1 className="text-5xl font-bold tracking-widest">West Island</h1>
+                        <p className="text-2xl font-semibold tracking-widest">Mobile Detailing</p>
+                    </div>
+                </AnimatedComponent>
+
+                <AnimatedComponent delay={1.8} duration={3} initial={0} opacity={1} className="flex flex-col justify-between space-y-8 pt-8">
+                    <div className="flex justify-between p-2 italic font-semibold">
+                        <p>Interior Only</p>
+                        <p>$ 70</p>
+                    </div>
+                    <div className="flex justify-between p-2 italic font-semibold">
+                        <p>Exterior Only</p>
+                        <p>$ 30</p>
+                    </div>
+                    <div className="flex justify-between p-2 italic font-semibold">
+                        <p>Interior + Exterior</p>
+                        <p>$ 110</p>
+                    </div>
+                    <span className="uppercase opacity-80 text-xs">*Prices vary based on car size*</span>
+                </AnimatedComponent>
+            </div>
+        </div>
+    );
+};
