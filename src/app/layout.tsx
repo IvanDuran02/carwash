@@ -14,10 +14,10 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
     title: "West Island Mobile Detailing",
-    description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
+    description: "Experience top-tier car detailing at your doorstep with West Island Mobile Detailing. Luxury made easy.",
     openGraph: {
         title: "West Island Mobile Detailing",
-        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
+        description: "Experience top-tier car detailing at your doorstep with West Island Mobile Detailing. Luxury made easy.",
         images: [{
             url: "http://samsmobiledetailing.vercel.app/carwash_logo.png",
             width: 733,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "West Island Mobile Detailing",
-        description: "Experience the ultimate convenience and luxury with West Island Mobile Detailing. We bring top-tier car washing and detailing services directly to your doorstep. Whether you need a thorough interior cleaning, a spotless exterior wash, or a comprehensive interior and exterior detailing, we've got you covered.",
+        description: "Experience top-tier car detailing at your doorstep with West Island Mobile Detailing. Luxury made easy.",
         images: [{
             url: "http://samsmobiledetailing.vercel.app/carwash_logo.png",
             width: 733,
